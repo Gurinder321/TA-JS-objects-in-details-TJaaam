@@ -15,7 +15,7 @@ For each different ways of creating object write different solutions.
 - Prototypal pattern of object creation (Put methods inside an object and create object using Object.create)
 - Pseudoclassical Pattern (Put methods inside F.prototype and use `new` to call function)
 - Create using class
-- Write test by creating two objects also test both methods.
+- Write test by creating two objects also test both methods. f
 
 ### To test use the following data
 
@@ -23,13 +23,13 @@ You can use the data given below. You will also have to change the name of the f
 
 ```js
 let firstQuestion = new Question(
-  'Where is the capital of Jordan',
-  ['Tashkent', 'Amaan', 'Kuwait City', 'Nairobi'],
+  "Where is the capital of Jordan",
+  ["Tashkent", "Amaan", "Kuwait City", "Nairobi"],
   1
 );
 let secondQuestion = new Question(
-  'Where is the capital of Jamaica',
-  ['Tashkent', 'Amaan', 'Kingston', 'Nairobi'],
+  "Where is the capital of Jamaica",
+  ["Tashkent", "Amaan", "Kingston", "Nairobi"],
   2
 );
 ```
