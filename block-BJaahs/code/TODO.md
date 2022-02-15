@@ -29,5 +29,3 @@ const testData = {
   correctAnswerIndex: 1,
 };
 ```
-
-fd
