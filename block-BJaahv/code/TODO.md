@@ -25,6 +25,8 @@ Create User (class/function) with the following properties.
 
 Write 2 tests for all the different ways of creating object. Test all the methods on these objects.
 
+<!-- Using function to create objects -->
+
 function createUser(name, id, noOfProjects){
 let user = {};
 user.name = name;
@@ -40,6 +42,8 @@ return `${user.name} has changed their name to ${newName}`
 return user
 }
 
+<!-- Using Object.create (prototypal pattern) -->
+
 function createUser(name, id, noOfProjects){
 let user = Object.create(userMethods);
 user.name = name;
@@ -54,3 +58,7 @@ return `${user.name} has changed their name to ${newName}`
 }
 return user
 }
+
+<!-- In a pseudoclassical way -->
+
+<!-- Using classes -->
