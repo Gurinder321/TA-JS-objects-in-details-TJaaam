@@ -1,8 +1,15 @@
 // 1. Create a function `createUser` that accepts `name` and `age` and returns a new object with those properties.
 
 function createUser(name, age) {
-  let newObj = {};
-  return newObj(name, age);
+  let user = {};
+  user.name = name;
+  user.age = age;
+
+  user.sayHello = function () {
+    return alert(`Welcome ${user}`);
+  };
+
+  return user;
 }
 
 // 2. Add a method named `sayHello` inside the object created above. When called it should alert `Welcome {user}`. Replace `{user}` with the name of the user.
