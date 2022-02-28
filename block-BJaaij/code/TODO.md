@@ -2,6 +2,7 @@
 
 - [ ] Create a class BookList
 - [ ] Create another class called Book
+<!-- Not done -->
 
 #### Each Book should have several properties:
 
