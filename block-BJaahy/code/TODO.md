@@ -2,30 +2,182 @@
 
 - Create a class named `Square` which accepts one parameter `side` and will set two property `width` and `height` to the value of `side`.
 
-class Square(side){
-constructor(width, height){
-this.width = width;
-this.height = height;
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
 }
-
-description() {
-alert(`The square is ${width} x ${height}`)
-}
-}
+```
 
 - Add a method name `description` that will alert a message saying `The square is ${width} x ${height}`
 
+```js
+class Square {
+    constructor(side) {
+        this.width = side;
+        this.height = side;
+    }
+    description{
+        alert(`The square is ${width} x ${height}`)
+    }
+}
+```
+
 - Create a method inside the class named `calcArea` that will return the area of the square.
+
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+}
+```
 
 - Create a `area` getter method using which we can get the area of the square.
 
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+  get area() {
+    return this.calcArea();
+  }
+}
+```
+
 - Create a `area` setter method that will accept the area of the square. Based on the value of area it will set the value of `width` and `height`.
+
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+  get area() {
+    return this.calcArea();
+  }
+  set area(areaOfSquare) {
+    this.width = Math.sqrt(areaOfSquare);
+    this.height = Math.sqrt(areaOfSquare);
+  }
+}
+```
 
 - Create a static method named `isEqual` which accepts two `square` object with `width` and `height` property. If the area of both square is same it will return `true` or `false`.
 
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+  get area() {
+    return this.calcArea();
+  }
+  set area(areaOfSquare) {
+    this.width = Math.sqrt(areaOfSquare);
+    this.height = Math.sqrt(areaOfSquare);
+  }
+  static isEqual(square1, square2) {
+    return square1.calcArea() == square2.calcArea();
+  }
+}
+```
+
 - Create two instance of the `Square` class
 
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+  get area() {
+    return this.calcArea();
+  }
+  set area(areaOfSquare) {
+    this.width = Math.sqrt(areaOfSquare);
+    this.height = Math.sqrt(areaOfSquare);
+  }
+  static isEqual(square1, square2) {
+    return square1.calcArea() == square2.calcArea();
+  }
+}
+
+let sq1 = new Square(100);
+let sq2 = new Square(1000);
+
+console.log(sq1, sq2);
+```
+
 - Check the `area` getter method on both square. Check the `area` property on one square more than 4 times.
+
+```js
+class Square {
+  constructor(side) {
+    this.width = side;
+    this.height = side;
+  }
+  description() {
+    alert(`The square is ${width} x ${height}`);
+  }
+  calcArea() {
+    return this.width * this.height;
+  }
+  get area() {
+    return this.calcArea();
+  }
+  set area(areaOfSquare) {
+    this.width = Math.sqrt(areaOfSquare);
+    this.height = Math.sqrt(areaOfSquare);
+  }
+  static isEqual(square1, square2) {
+    return square1.calcArea() == square2.calcArea();
+  }
+}
+
+let sq1 = new Square(100);
+let sq2 = new Square(1000);
+
+console.log(sq1, sq2);
+
+console.log(sq1.area);
+```
 
 - Check the `isEqual` method and pass the two instance you created above.
 
