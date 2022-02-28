@@ -5,6 +5,8 @@ We will be creating a quiz app in this section step-by-step. Follow the steps be
 
 ### Make a Question class with these data and methods:
 
+<!-- Not done -->
+
 DATA:
 
 - Title of the question
