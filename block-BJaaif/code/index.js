@@ -3,12 +3,13 @@
 ****************************************************************/
 
 /*** CHALLENGE 1 of 1 ***/
+// Not done
 
 function makePerson(name, age) {
   // add code here
 }
 
-var vicky = makePerson('Vicky', 24);
+var vicky = makePerson("Vicky", 24);
 
 // /********* Uncomment these lines to test your work! *********/
 // console.log(vicky.name); // -> Logs 'Vicky'
@@ -33,7 +34,7 @@ function personFromPersonStore(name, age) {
   // add code here
 }
 
-var sandra = personFromPersonStore('Sandra', 26);
+var sandra = personFromPersonStore("Sandra", 26);
 
 // /********* Uncomment these lines to test your work! *********/
 // console.log(sandra.name); // -> Logs 'Sandra'
@@ -66,7 +67,7 @@ function personFromConstructor(name, age) {
   // add code here
 }
 
-var mike = personFromConstructor('Mike', 30);
+var mike = personFromConstructor("Mike", 30);
 
 // /********* Uncomment these lines to test your work! *********/
 // console.log(mike.name); // -> Logs 'Mike'
@@ -111,13 +112,13 @@ var george = new PersonClass();
 
 var userFunctionStore = {
   sayType: function () {
-    console.log('I am a ' + this.type);
+    console.log("I am a " + this.type);
   },
 };
 
 function userFactory(name, score) {
   let user = Object.create(userFunctionStore);
-  user.type = 'User';
+  user.type = "User";
   user.name = name;
   user.score = score;
   return user;
@@ -131,7 +132,7 @@ function adminFactory(name, score) {
 
 /* Put code here for a method called sharePublicMessage*/
 
-var adminFromFactory = adminFactory('Eva', 5);
+var adminFromFactory = adminFactory("Eva", 5);
 
 // /********* Uncomment these lines to test your work! *********/
 // adminFromFactory.sayType() // -> Logs "I am a Admin"
